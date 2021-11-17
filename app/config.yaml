@@ -1,0 +1,13 @@
+app:
+  N: "Nhịp đập bình thường."
+  F: "Nhịp hợp nhất."
+  Q: "Nhịp không xác định."
+  S: "Nhịp sớm trên thất."
+  V: "Co bóp tâm thất sớm."
+  N_benh: "SetupN."
+  F_benh: "SetupF."
+  Q_benh: "SetupQ."
+  S_benh: "SetupS."
+  V_benh: "SetupV."
+  model: "C:/Users/ASUS/ProjectDA/ECG_Classification/model_100-0.4-32/weights-99-0.96-100-0.4-32.hdf5"
+

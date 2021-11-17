@@ -1,0 +1,87 @@
+{% extends "base.html" %} {% block content %}
+
+<h1 style="text-align: center; color: rgb(196, 148, 16);">ECG Image Classifier</h1>
+
+<div>
+    <form id="upload-file" method="post" enctype="multipart/form-data">
+        <label for="imageUpload" class="upload-label">
+            Choose file...
+        </label>
+        <input type="file" name="file" id="imageUpload" accept=".png, .jpg, .jpeg">
+    </form>
+    <div style="display: flex;">
+    <div class="image-section" style="display:none;">
+        <h3 style="color: rgb(226, 17, 51);  text-align: center;">Image Show</h3>
+        <div class="img-preview">
+            <div id="imagePreview">
+            </div>
+        </div>
+    </div>
+        <div style ="margin-top: 18.5%;
+        margin-left: 13%;">
+            <button type="button" class="btn btn-primary btn-lg " id="btn-predict">Predict!</button>
+        </div>
+        
+
+        <div style="margin-top: 2%;
+        margin-left: 15%;">
+            <h3 style="color: blue;  text-align: center;">Result Predict</h3>
+            <div class = "box-view">
+                <div class="loader" style="display:none;"></div>
+                <div style="    margin-top: 7;
+                margin-left: 5;
+                margin-bottom: 5;
+                margin-right: 5;
+                color: rgba(127, 255, 212, 0.623);">
+                    <h5 id="filename">
+                        <span> </span>
+                    </h5>
+                </div>
+                <div style="    margin-top: 7;
+                margin-left: 5;
+                margin-bottom: 5;
+                margin-right: 5;
+                color: rgba(127, 255, 212, 0.623);">
+                    <h5 id="time_predict">
+                        <span> </span>
+                    </h5>
+                </div>
+                <div style="    margin-top: 7;
+                margin-left: 5;
+                margin-bottom: 5;
+                margin-right: 5;
+                color: rgba(127, 255, 212, 0.623);">
+                    <h5 id="result">
+                        <span> </span>
+                    </h5>
+                </div>
+                <div style="    margin-top: 7;
+                margin-left: 5;
+                margin-bottom: 5;
+                margin-right: 5;
+                color: rgba(127, 255, 212, 0.623);">
+                    <h5 id="score">
+                        <span> </span>
+                    </h5>
+                </div>
+                <div style="    margin-top: 7;
+                margin-left: 5;
+                margin-bottom: 5;
+                margin-right: 5;
+                color: rgba(127, 255, 212, 0.623);">
+                    <h5 id="status">
+                        <span> </span>
+                    </h5>
+                </div>
+                <div style="    margin-top: 7;margin-left: 5;margin-bottom: 5;margin-right: 5;
+                color: rgba(127, 255, 212, 0.623);">
+                    <h5 id="item">
+                        <span> </span>
+                    </h5>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

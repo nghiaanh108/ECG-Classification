@@ -1,0 +1,29 @@
+{
+    "filename": "hshs.jpg",
+    "time_predict": "12s",
+    "class": "N",
+    "score": 98.99,
+    "status": "bệnh gì gì đó",
+    "result": [
+        {
+            "class": "N",
+            "score": 98
+        },
+        {
+            "class": "V",
+            "score": 98
+        },
+        {
+            "class": "Q",
+            "score": 98
+        },
+        {
+            "class": "S",
+            "score": 98
+        },
+        {
+            "class": "F",
+            "score": 98
+        }
+    ]
+}
